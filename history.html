@@ -7,7 +7,10 @@
   <style>
 	  
 	  body {
-            background-color: pink;
+		  background-color: rgb(227, 155, 216);
+		  font-family: 'Geneva';
+		  color: rgb(148, 3, 126);
+
         }
 	  
 	  .grid-container {
@@ -36,7 +39,7 @@
 		  width: 100%;
 		  opacity: 0;
 		  transition: .5s ease;
-		  background-color: lightpink;
+		  background-color: hotpink;
 	  }
 	  
 	  .item:hover .overlay {
@@ -51,7 +54,33 @@
 		  left: 50%;
 		  transform: translate(-50%, -50%);
 		  text-align: center;
+		  max-height: 90%;
 	  }
+	  
+	  @media screen and (max-width: 1200px) {
+		  .text {
+                font-size: 9px;
+            }
+        }
+	  
+	  @media screen and (max-width: 1000px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* Change to two columns for medium screens */
+            }
+		  .text {
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Change to one column for smaller screens */
+            }
+
+            .text {
+                font-size: 10px;
+            }
+        }
 	  
 	  
   </style>
@@ -69,7 +98,7 @@
                 <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
-	
+	<br><br><br>
 	<h1>History of Pink</h1>
 	
 	<div class="grid-container">
@@ -160,7 +189,7 @@
 	
 	<div id="logo">
 		<a href="home.html" id="logo">
-			<img src="logoandwords.png">
+			<img src="logowhite.png">
 		</a>
 	</div>
 
@@ -171,3 +200,4 @@
 </body>
 
 </html>
+
