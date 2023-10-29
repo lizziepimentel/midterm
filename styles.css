@@ -17,7 +17,6 @@ nav a {
 nav ul li a:hover {
         color: rgb(227, 155, 216) 
 }
-
 footer {
         color: rgb(148, 3, 126);
         text-align: center;
@@ -27,6 +26,10 @@ footer {
         font-family: 'Geneva';
         font-weight: bold;
         font-size: 18px;
+}
+#logo {
+    text-align: center;
+    padding: 20px;
 }
 h1 {
         font-family: 'Geneva';
